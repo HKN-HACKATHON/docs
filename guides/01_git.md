@@ -108,4 +108,4 @@ git pull origin <branch-name>
 git pull
 ```
 
-## **Note:** After you push changes on a different branch than the default one, you may use Github to merge those changes by using the Pull Request feature. This can be helpful in case you want to explain and discuss your changes and if you do not want to use the command line to manage merges.
+**Note:** After you push changes on a different branch than the default one, you may use Github to merge those changes by using the Pull Request feature. This can be helpful in case you want to explain and discuss your changes and if you do not want to use the command line to manage merges.
