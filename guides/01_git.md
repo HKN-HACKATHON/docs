@@ -1,15 +1,15 @@
 # **How to use Git**
 
-Git is a version control system that can track changes made on any source file and can be used on any set of computer files, and be useful when coordinating work between different people.  
-It is able to create a snapshot of any point on your project, those snapshots are called commits and can be used to save and restore any points of the source history.
+Git is a version control system that can track changes made on any source file and can be used on any set of computer files, and is useful when coordinating work between different people.  
+It is able to create a snapshot of any point on your project, those snapshots are called commits and can be used to save and restore any points of the source code history.
 
 ### **1\. Setup and Initialization**
 
-To begin using git it should be setted up on your machine, you can find how to install it from [https://git-scm.com/install/](https://git-scm.com/install/).
+To begin using git it should be set up on your machine, you can find how to install it from [https://git-scm.com/install/](https://git-scm.com/install/).
 
 #### **A. Configure Git Identity**
 
-After the installation, you should configure it by setting up your name and email. This information is used to identify yourself on a commit and is required for their creations.
+After the installation, you should configure it by setting up your name and email. This information is used to identify yourself on a commit and is required for their creation.
 
 ```shell
 
@@ -36,11 +36,11 @@ If you are working on an already existing project, like the one provided for the
 git clone https://github.com/user/repository
 ```
 
-Be aware that source control web sites, such as Github, will require you to authenticate yourself in case you’re trying to clone a private repository. To setup this authentication, you can check at the tutorial on this link [https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/about-authentication-to-github](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/about-authentication-to-github) or use the [Github Desktop Application](https://docs.github.com/en/desktop/installing-and-authenticating-to-github-desktop/installing-github-desktop) on this link [https://docs.github.com/en/desktop/installing-and-authenticating-to-github-desktop/authenticating-to-github-in-github-desktop](https://docs.github.com/en/desktop/installing-and-authenticating-to-github-desktop/authenticating-to-github-in-github-desktop)
+Be aware that source control web sites, such as Github, will require you to authenticate yourself in case you’re trying to clone a private repository. To setup this authentication, you can check the tutorial on this link [https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/about-authentication-to-github](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/about-authentication-to-github) or use the [Github Desktop Application](https://docs.github.com/en/desktop/installing-and-authenticating-to-github-desktop/installing-github-desktop) on this link [https://docs.github.com/en/desktop/installing-and-authenticating-to-github-desktop/authenticating-to-github-in-github-desktop](https://docs.github.com/en/desktop/installing-and-authenticating-to-github-desktop/authenticating-to-github-in-github-desktop)
 
 ### **3\. Staging and Committing Changes**
 
-The creation of a snapshot is managed by the use of the *stage* and *commit* commands, respectively to select a file that will be included in the commit and to create this commit. 
+The creation of a snapshot is managed by the use of the *add* and *commit* commands, respectively to select files that will be included in the commit and to finalize the commit. 
 
 ```shell
 git add <file-name> # Select a file to add to the commit
@@ -50,7 +50,7 @@ git commit -m "Your descriptive message"
 
 ```
 
-Another useful command is the *status* one, which can be used to check which files need to be tracked by git and the ones that were updated.
+Another useful command is the *status* one, which can be used to check which files need to be tracked by git and which were updated.
 
 ```shell
 
@@ -60,7 +60,7 @@ git status # Check the files that needs to be updated
 
 ### **4\. Working with isolated code snapshots**
 
-When working with multiple people on the same repository, it may be necessary to have a personal isolated line of development that is not affected by the changes that they made.  
+When working with multiple people on the same repository, it may be necessary to have a personal isolated line of development that is not affected by the changes that others made.  
 In git terms, this personal line is called a **branch.** By default, when git initializes a repository it creates a branch called main or master.
 
 To manage branches, the commands that git provides are *branch, checkout* and *switch.*
@@ -82,7 +82,7 @@ git checkout -b <new-branch-name>
 
 ### **5\. Recombine those isolated code snapshots**
 
-After a branch has served its purpose for being created, you may need to recombine (or merge) it with another branch to restore the initial development flow disrupted by this isolation and update the other branches.
+After a branch has served its purpose, you may need to recombine (or merge) it with another branch to restore the initial development flow disrupted by this isolation and update other branches.
 
 ```shell
 # Combine all the updates of the branch <branch-name> with the currently selected one
@@ -93,7 +93,7 @@ Be aware that you may have conflicting changes on one or more files, in this cas
 
 ### **6\. Saving and getting changes from a Remote Repositories**
 
-One of the features of git that make it possible to collaborate with other people, is the ability to use remote repositories to send and receive source code updates.  
+One of the features of git that makes it possible to collaborate with other people, is the ability to use remote repositories to send and receive source code updates.  
 The git way of working with such repositories is done with the commands *push* and *pull*, which respectively send and receive changes from the remote repository.
 
 ```shell
@@ -108,4 +108,4 @@ git pull origin <branch-name>
 git pull
 ```
 
-## **Note:** After you push changes on a different branch than the default one, you may use Github to merge those changes by using the pull request feature. This can be helpful in case you want to explain and discuss your changes and if you do not want to use the command line to manage merges.
+## **Note:** After you push changes on a different branch than the default one, you may use Github to merge those changes by using the Pull Request feature. This can be helpful in case you want to explain and discuss your changes and if you do not want to use the command line to manage merges.
