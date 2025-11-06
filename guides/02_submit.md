@@ -3,12 +3,17 @@
 To submit your project it is required that you create a new release using **Github Releases**.  
 This will be used to know the exact version that will be assessed.
 
-## Make Sure Your Repository is Up to Date
+## Make Sure Your App is Tested and the Repository is Up to Date
 
-Your github repository should have the latest commit that needs to be evaluated.  
+Your github repository should have a working application runnable through Docker
+and have the latest commit that needs to be evaluated.  
 To ensure this, use the following commands
 
 ```shell
+# run the application with Docker
+docker build <Dockerfile_directory> -t app:tag
+docker run app:tag [options needed ...]
+
 # ensure the latest version is committed
 git commit -m "...comment..."
 git push 
