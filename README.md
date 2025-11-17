@@ -6,5 +6,6 @@ The documentation includes:
 - [Git tutorial](guides/01_git.md)
 - [Docker tutorial](guides/03_docker.md)
 - [Submission tutorial](guides/02_submit.md)
+- [README Template](README_Template.md)
 
 We hope you find them useful, and in case of troubles or doubts, we will be available over on Discord.
