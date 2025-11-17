@@ -28,9 +28,11 @@
 - [Feature]
 - [Extra Feature — short description]
 
-## Running the Project with Docker
+## Running the Project
 
 *List the commands to build and run the project with Docker.*
+
+*List any admin and test credentials."
 
 ## API
 
